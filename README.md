@@ -1,7 +1,5 @@
-# SalesTax ->
-User defined input from other source and display the output in the console.
+# SalesTax issue from user define input
 
-Solution ->
 1) Implemented Decorator design pattern for tax calculation
 2) Create dynamic model for shopping cart. 
 3) Code read input from file system -> inputs/input1.txt, inputs/input2.txt, inputs/input3.txt
@@ -12,7 +10,6 @@ Inputs:
 1 book at 12.49
 1 chocolate bar at .85
 1 music CD at 14.99
-
 Outputs:
 1 book: 12.49
 1 chocolate bar: .85
@@ -23,7 +20,6 @@ Total: 29.83
 Inputs:
 1 imported box of chocolates at 10.00
 1 imported bottle of perfume at 47.50
-
 Outputs:
 1 imported box of chocolates: 10.50
 1 imported bottle of perfume: 54.65
@@ -35,7 +31,6 @@ Inputs:
 1 bottle of perfume at 18.99
 1 box of imported chocolates at 11.25
 1 imported bottle of perfume at 27.99
-
 Outputs:
 1 packet of headache pills: 9.75
 1 bottle of perfume: 20.89
