@@ -27,7 +27,6 @@ public class ImportTaxDecorator extends TaxDecorator {
 		return itemToDecorate.getInitPrice();
 	}
 
-
 	@Override
 	public int hashCode() {
 		return this.getName().hashCode();
@@ -35,12 +34,10 @@ public class ImportTaxDecorator extends TaxDecorator {
 
 	@Override
 	public boolean equals(Object obj) {
-
 		if (obj == null) {
 			return false;
 		} else if (obj instanceof Item) {
 			return (((Item) obj).hashCode() == this.hashCode());
-
 		} else
 			return false;
 	}

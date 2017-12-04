@@ -11,5 +11,4 @@ public interface Item {
 	boolean isExempt();
 	
 	double getPrice();
-
 }

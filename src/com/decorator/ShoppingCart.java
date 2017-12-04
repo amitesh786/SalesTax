@@ -54,7 +54,7 @@ public class ShoppingCart {
 	}
 
 	public void printOrderInput() {
-		System.out.println("Order input: ");
+		System.out.println("Inputs: ");
 		for ( Item item : itemMap.keySet() ){
 			System.out.println(itemMap.get(item) + " " + item.getName() + " at " + df.format(item.getInitPrice()));
 		}	
@@ -64,9 +64,9 @@ public class ShoppingCart {
 	public void printOrderResults() {	
 		double taxtotal = 0;
 		double total = 0;
-		System.out.println("Order results: ");
+		System.out.println("Outputs: ");
 		Set<Item> taxedItems = itemMap.keySet();
-		for (Item item : taxedItems){		
+		for (Item item : taxedItems){
 			double subTotal = item.getPrice() * getQuantity(item);
 			double subInitTotal = item.getInitPrice() * getQuantity(item);
 			taxtotal += subTotal - subInitTotal;
@@ -76,7 +76,7 @@ public class ShoppingCart {
 		total = Util.roundPrice(total);
 		System.out.println("Sales Taxes: "+df.format(taxtotal));
 		System.out.println("Total: "+df.format(total));
-		System.out.println();
+		//System.out.println();
 	}
 	
 	public static void main(String[] args)
@@ -84,8 +84,8 @@ public class ShoppingCart {
 	    // Check how many arguments were passed in
 	    if(args.length == 0)
 	    {
-	        System.out.println("Proper Usage is: java -jar salestax filename(s)");
-	        System.out.println("example: java -jar salestax in1.txt in2.txt");
+	        System.out.println("Please pass teh argument before running");
+	        System.out.println("example: salestax in1.txt in2.txt in3.txt");
 	        System.exit(0);
 	    }
 	    for (String fileName: args) Util.getFromFile(fileName);
